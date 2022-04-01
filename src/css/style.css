@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+/*---variaveis---*/
+:root{
+    --color-green-bg-principal: #112409; 
+    --color-red-bg-principal: #8B0000;
+    --color-blue-bg-principal: #1a0ea1;
+    --color-yellow-bg-principal: #f4d301;
+    --color-green-bg-secundaria:rgb(6, 252, 4);  
+    --color-red-bg-secundaria: #ff0000;  
+    --color-blue-bg-secundaria:#1E90FF;  
+    --color-yellow-bg-secundaria:#ffff00;  
+}
+/*--------------*/
+/*--Genius--*/
+h1{
+    font-family: 'Bungee', cursive;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+    color: aliceblue;
+}
+/*---------*/
+
+/*-----navegação-----*/
+
+.btn-play{
+    padding: 6px 10px;
+    margin-left: 50px;
+    background-color: #0A3E8A;
+    color: white;
+    border: 1px solid #0A3E8A;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_2{
+    display: flex;
+    margin-left: 50%;
+}
+.level{
+    margin-right: 450px;
+}
+p{
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+}
+/*------------------*/
+/*--tabuleiro--*/
+.green{
+    background-color: var(--color-green-bg-principal);
+    border-start-start-radius: 100%;
+}
+.red{
+    background-color: var(--color-red-bg-principal);
+    border-top-right-radius: 100%;
+}
+.blue{
+    background-color: var(--color-blue-bg-principal);
+    border-bottom-left-radius: 100%;
+}
+.yellow{
+    background-color: var(--color-yellow-bg-principal);
+    border-bottom-right-radius: 100%;
+}
+.btn{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border: 10px solid gray;
+}
+.container{
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin-top: 8%;
+    margin-left: 60px;
+}
+/*--------------------*/
+/*-----cores secundarias--------*/
+@keyframes animaRed{
+    40%{
+        background-color: var(--color-red-bg-secundaria);
+        transform: scale(1);
+        box-shadow: 0px 5px 10px 5px white;
+    }   
+}
+@keyframes animaYellow{
+    40%{
+        background-color: var(--color-red-bg-secundaria);
+        transform: scale(1);
+        box-shadow: 0px 5px 10px 5px white;
+    }   
+}
+@keyframes animaBlue{
+    40%{
+        background-color: var(--color-red-bg-secundaria);
+        transform: scale(1);
+        box-shadow: 0px 5px 10px 5px white;
+    }   
+}
+@keyframes animaGreen{
+    40%{
+        background-color: var(--color-red-bg-secundaria);
+        transform: scale(1);
+        box-shadow: 0px 5px 10px 5px white;
+    }   
+}
+
+.animacaoRed{
+    animation-name: animaRed;
+    animation-duration: 1s;
+}
+.animacaoYellow{
+    animation-name: animaYellow;
+    animation-duration: 1s;
+}
+.animacaoBlue{
+    animation-name: animaBlue;
+    animation-duration: 1s;
+}
+.animacaoGreen{
+    animation-name: animaGreen;
+    animation-duration: 1s;
+}
+/*-----------------------------*/
+/*------instruções-------*/
+.box-how-play{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: -593px;
+    margin-right: 100px;
+}
+/*----------------------*/
+/*---hover----*/
+.btn:hover{
+    transform: scale(1);
+    box-shadow: 0px 5px 10px 5px white;
+}
+.btn-play:hover{
+    border: 1px solid white;
+}
